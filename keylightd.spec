@@ -1,6 +1,6 @@
 Name: keylightd
 Version: 1.1.0
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Keyboard backlight daemon for the Framework Laptop
 
 License: 0BSD

@@ -1,6 +1,6 @@
 [package]
 name = "keylightd"
-version = "1.1.0"
+version = "1.1.1"
 edition = "2021"
 license = "0BSD"
 readme = "README.md"
@@ -9,16 +9,16 @@ repository = "https://github.com/tekq/keylightd"
 categories = ["hardware-support", "command-line-utilities"]
 
 [dependencies]
-evdev = "0.12.1"
-nix = { version = "0.26.2", features = ["user"] }
-anyhow = "1.0.70"
-bytemuck = { version = "1.13.1", features = ["derive"] }
-log = "0.4.17"
-env_logger = { version = "0.10.0", default-features = false, features = [
+evdev = "0.13.2"
+nix = { version = "0.31.3", features = ["user", "ioctl"] }
+anyhow = "1.0.104"
+bytemuck = { version = "1.25.2", features = ["derive"] }
+log = "0.4.33"
+env_logger = { version = "0.11.11", default-features = false, features = [
     "auto-color",
     "humantime",
 ] }
-argh = "0.1.10"
+argh = "0.1.19"
 
 [profile.release]
 strip = "debuginfo"
